@@ -12,7 +12,7 @@ const PetBlogInside = () => {
         <>
             <Head>
                 <title>部落格|{router.query.id}</title>
-                <meta property="og:image" content={`../../../src/images/blog/NO.${num}_S.jpg`} />
+                <meta property="og:image" content={`../../../src/images/blog/NO.10_S.jpg`} />
                 <meta property="og:image:width" content="500" />
                 <meta property="og:image:height" content="350" />
             </Head>
@@ -20,7 +20,7 @@ const PetBlogInside = () => {
                 {
                     num !== undefined &&
                     <Image
-                        src={require(`../../../src/images/blog/NO.${num}_S.jpg`)}
+                        src={require(`../../../src/images/blog/NO.10_S.jpg`)}
                         alt="Picture of the author"
                         className='img-fluid'
                         width={500}
