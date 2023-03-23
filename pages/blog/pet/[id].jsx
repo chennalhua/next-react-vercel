@@ -11,7 +11,7 @@ const PetBlogInside = () => {
     return (
         <>
             <Head>
-                <title>HomePage|首頁</title>
+                <title>部落格|{router.query.id}</title>
                 <meta property="og:image" content={`../../../src/images/blog/NO.${num}_S.jpg`} />
                 <meta property="og:image:width" content="500" />
                 <meta property="og:image:height" content="350" />
