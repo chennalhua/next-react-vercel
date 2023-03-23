@@ -6,7 +6,6 @@ import { EncryptFormData, GetFormData } from '../../src/function/FormDataEvent'
 
 function App() {
     const router = useRouter()
-    let [data, setData] = useState({ CusName: '' })
     let form = useRef({});
     useEffect(() => {
         if (GetFormData(router.query.order) !== undefined) {
