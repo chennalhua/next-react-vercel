@@ -14,7 +14,7 @@ const PetBlogInside = () => {
         <>
             <Head>
                 <title>部落格|10</title>
-                <meta property="og:image" content={BlogMetaImg} />
+                <meta property="og:image" content='%PUBLIC_URL%/src/images/blog/NO.12_S.jpg`' />
                 <meta property="og:image:width" content="500" />
                 <meta property="og:image:height" content="350" />
             </Head>
