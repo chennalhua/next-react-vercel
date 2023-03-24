@@ -1,3 +1,5 @@
+const securityHeaders = [{ key: 'X-Content-Type-Options', value: 'nosniff' }]
+
 module.exports = {
     // 一律都跑 env 如需部屬該對應，要改為 !!! "env" !!!
     envPro: { //run production
@@ -9,5 +11,13 @@ module.exports = {
         REACT_APP_API: 'https://eip2.goldennet.com.tw:9043',
         REACT_APP_AES_KEY: 'KEY66666GoLdEnBrOkErAPI-84200994',
         REACT_APP_AES_IV: 'I2GoLdEnSeRvIcEV'
-    }
+    },
+    async headers() {
+        return [
+            {
+                source: '/:path*',
+                headers: securityHeaders,
+            },
+        ]
+    },
 }

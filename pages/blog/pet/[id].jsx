@@ -11,7 +11,7 @@ const PetBlogInside = () => {
     return (
         <>
             <Head>
-                <title>部落格|{router.query.id}</title>
+                <title>部落格|10</title>
                 <meta property="og:image" content={`../../../src/images/blog/NO.10_S.jpg`} />
                 <meta property="og:image:width" content="500" />
                 <meta property="og:image:height" content="350" />
@@ -29,6 +29,7 @@ const PetBlogInside = () => {
                 }
                 <p>內頁：{router.query.id}</p>
                 <p>../../../src/images/blog/NO.{router.query.id}_S.jpg</p>
+                <a href='http://localhost:3000/src/images/blog/NO.10_S.jpg'>click</a>
             </div>
         </>
     )
