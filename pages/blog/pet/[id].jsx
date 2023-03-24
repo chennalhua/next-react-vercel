@@ -2,6 +2,8 @@ import { useRouter } from 'next/router';
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import Head from 'next/head'
+
+import BlogMetaImg from '../../../src/images/blog/NO.12_S.jpg'
 const PetBlogInside = () => {
     const router = useRouter()
 
@@ -12,7 +14,7 @@ const PetBlogInside = () => {
         <>
             <Head>
                 <title>部落格|10</title>
-                <meta property="og:image" content='https://next-react-vercel-12tdv8cht-chennalhua.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FNO.10_S.d0f00174.jpg&w=1080&q=75' />
+                <meta property="og:image" content={BlogMetaImg} />
                 <meta property="og:image:width" content="500" />
                 <meta property="og:image:height" content="350" />
             </Head>
