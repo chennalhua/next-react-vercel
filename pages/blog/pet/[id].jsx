@@ -8,7 +8,7 @@ const PetBlogInside = () => {
 
     let [num, setNum] = useState(router.query.id)
     useEffect(() => { setNum(router.query.id) }, [router.query]);
-    const ogImageUrl = `${window.location.origin}/src/images/blog/NO.12_S.jpg`;
+    const ogImageUrl = 'https://next-react-vercel-imoqb8ge0-chennalhua.vercel.app/src/images/blog/NO.10_S.jpg'
     return (
         <>
             <Head>
