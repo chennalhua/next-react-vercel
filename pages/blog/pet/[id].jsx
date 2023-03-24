@@ -1,22 +1,19 @@
 import { useRouter } from 'next/router';
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
-import Head from 'next/head'
+import { NextSeo } from 'next-seo';
 
 const PetBlogInside = () => {
     const router = useRouter()
 
     let [num, setNum] = useState(router.query.id)
     useEffect(() => { setNum(router.query.id) }, [router.query]);
-    const ogImageUrl = 'https://next-react-vercel-imoqb8ge0-chennalhua.vercel.app/src/images/blog/NO.10_S.jpg'
     return (
         <>
-            <Head>
-                <title>部落格|10</title>
-                <meta property="og:image" content={ogImageUrl} />
-                <meta property="og:image:width" content="500" />
-                <meta property="og:image:height" content="350" />
-            </Head>
+            <NextSeo
+                title={`部落格|第${router.query.id}篇`}
+                openGraph={{}}
+            />
             <div className="container mt-3">
                 {
                     num !== undefined &&
