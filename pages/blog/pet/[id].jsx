@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import Head from 'next/head'
 
-import BlogMetaImg from '../../../src/images/blog/NO.12_S.jpg'
 const PetBlogInside = () => {
     const router = useRouter()
 
