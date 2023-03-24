@@ -9,12 +9,12 @@ const PetBlogInside = () => {
 
     let [num, setNum] = useState(router.query.id)
     useEffect(() => { setNum(router.query.id) }, [router.query]);
-
+    const ogImageUrl = `${window.location.origin}/src/images/blog/NO.12_S.jpg`;
     return (
         <>
             <Head>
                 <title>部落格|10</title>
-                <meta property="og:image" content='%PUBLIC_URL%/src/images/blog/NO.12_S.jpg`' />
+                <meta property="og:image" content={ogImageUrl} />
                 <meta property="og:image:width" content="500" />
                 <meta property="og:image:height" content="350" />
             </Head>
