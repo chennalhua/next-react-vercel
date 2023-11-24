@@ -22,8 +22,8 @@ const FunctionList = ({ type, GotoInsurance }) => { //固定右側功能列
         }
     }
 
-    let fbMessenger = document.querySelector('#fb-root')
     useEffect(() => {
+        let fbMessenger = document.querySelector('#fb-root')
         if (fbMessenger !== null) {
             if (isShowList) {
                 fbMessenger.style.display = 'block'
