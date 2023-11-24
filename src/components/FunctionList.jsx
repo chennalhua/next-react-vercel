@@ -22,6 +22,17 @@ const FunctionList = ({ type, GotoInsurance }) => { //固定右側功能列
         }
     }
 
+    useEffect(() => {
+        let fbMessenger = document.querySelector('.fb_dialog_content')
+        if (fbMessenger !== null) {
+            if (isShowList) {
+                fbMessenger.style.display = 'block'
+            } else {
+                fbMessenger.style.display = 'none'
+            }
+        }
+    }, [isShowList])
+
     //@ BUTTON
     const handleBtn = {
         goHealthy: function () { //@ GO 健康
