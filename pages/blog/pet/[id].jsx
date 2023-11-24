@@ -15,7 +15,7 @@ const PetBlogInside = () => {
                 openGraph={{}}
             />
             <div className="container mt-3">
-                {
+                {/* {
                     num !== undefined &&
                     <Image
                         src={require(`../../../src/images/blog/NO.10_S.jpg`)}
@@ -24,7 +24,7 @@ const PetBlogInside = () => {
                         width={500}
                         height={500}
                     />
-                }
+                } */}
                 <p>內頁：{router.query.id}</p>
                 <p>../../../src/images/blog/NO.{router.query.id}_S.jpg</p>
                 <a href='http://localhost:3000/src/images/blog/NO.10_S.jpg'>click</a>
