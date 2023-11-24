@@ -72,7 +72,7 @@ const FunctionList = ({ type, GotoInsurance }) => { //固定右側功能列
         },
         goTop: function () { //@ go top
             return (
-                <button className='gotop btn w-100 rounded-pill p-1 mt-2' style={{ boxShadow: '0 0 10px 0 rgba(0,0,0,.2)' }}
+                <button className='gotop btn w-100 rounded-pill p-1 mt-3' style={{ boxShadow: '0 0 10px 0 rgba(0,0,0,.2)' }}
                     onClick={handleEvent.clickGoTop}>
                     <p className='small text-center'>
                         <Icon color='#5faa58' size={14} icon='arrow_up_full' />
@@ -110,8 +110,6 @@ const FunctionList = ({ type, GotoInsurance }) => { //固定右側功能列
 
     return (
         <>
-            {/* <Icon icon='arrow_left_line' size={20} color='#fff'/>
-        <Icon icon='arrow_right_line' size={20} color='#fff'/> */}
             <div className='function-list position-fixed d-block' style={{ bottom: '25px', right: '10px', zIndex: '10' }}>
                 {GotoInsurance && handleBtn?.goInsurance()}
                 <div className='open-btn'>
