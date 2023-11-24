@@ -17,7 +17,7 @@ export default function MyApp({ Component, pageProps }) {
     }
     return <>
         <Head><link rel="icon" href="/favicon.ico" /></Head>
-    <div id="fb-root"></div>
+    <div id="fb-root" className='d-none'></div>
 
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
