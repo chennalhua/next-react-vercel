@@ -120,7 +120,11 @@ const FunctionList = ({ type, GotoInsurance }) => { //固定右側功能列
                     </div>
                     <p style={{ whiteSpace: 'pre' }}>有疑問?</p>
                     <div className={`${isShowList ? 'd-block' : 'd-none'}`}>
-                        <button id='FBContact' className='function-btn btn my-3 position-relative bg-secondary' style={{ top: '0px', boxShadow: 'none' }}></button>
+                        <button id='FBContact' className='function-btn btn my-3 position-relative bg-fb' style={{ top: '6px', right: '1px', boxShadow: 'none' }}>
+                            <div class="spinner-border spinner-border-sm text-light " role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </button>
                         {handleBtn?.goLine()}
                         {handleBtn?.haveQA()}
                     </div>
