@@ -540,8 +540,6 @@
     }
 }
 
-
-
 .goto-insurance {
     //立即投保
     transition: all 0.3s;
@@ -974,7 +972,6 @@
     }
 }
 
-
 //@ Function List
 .function-list {
     .function-btn {
@@ -1029,7 +1026,7 @@
     }
     .open-btn {
         display: block;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(33, 37, 41, 0.7);
         color: $light;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
         border-radius: 10px;
