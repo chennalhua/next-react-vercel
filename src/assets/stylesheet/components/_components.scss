@@ -540,77 +540,7 @@
     }
 }
 
-//@ Function List
-.function-list {
-    .function-btn {
-        transition: all 0.3s;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-        display: block;
-        img {
-            transition: all 0.3s;
-            transform: scale(1.2);
-        }
-        &:active {
-            transform: scale(0.9);
-        }
-        &:hover img {
-            transform: scale(1.4);
-        }
-    }
-    .event-btn {
-        transition: all 0.3s;
-        width: 60px;
-        height: 60px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-        display: block;
-        padding: 0;
-        overflow: hidden;
-        img {
-            transition: all 0.3s;
-            transform: scale(1.2);
-        }
-        &:active {
-            transform: scale(0.9);
-        }
-        &:hover img {
-            transform: scale(1.2);
-        }
-    }
-    .gotop {
-        background: $primary-m;
-        color: $primary-l;
-        transition: all 0.3s;
-        &:hover,
-        &:active {
-            background: $primary;
-            color: #fff;
-            path {
-                fill: #fff !important;
-            }
-        }
-    }
-    .open-btn {
-        position: absolute;
-        right: -10px;
-        bottom: 45px;
-        display: block;
-        background: rgba(0, 0, 0, 0.5);
-        color: $light;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        padding: 5px;
-        p {
-            font-size: 16px;
-            @include view-576 {
-                font-size: 13px;
-            }
-        }
-    }
-}
+
 
 .goto-insurance {
     //立即投保
@@ -1040,6 +970,79 @@
         &:active,
         &:focus {
             border: 1.5px solid $primary-l !important;
+        }
+    }
+}
+
+
+//@ Function List
+.function-list {
+    .function-btn {
+        transition: all 0.3s;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        display: block;
+        img {
+            transition: all 0.3s;
+            transform: scale(1.2);
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+        &:hover img {
+            transform: scale(1.4);
+        }
+    }
+    .event-btn {
+        transition: all 0.3s;
+        width: 60px;
+        height: 60px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        display: block;
+        padding: 0;
+        overflow: hidden;
+        img {
+            transition: all 0.3s;
+            transform: scale(1.2);
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+        &:hover img {
+            transform: scale(1.2);
+        }
+    }
+    .gotop {
+        background: $primary-m;
+        color: $primary-l;
+        transition: all 0.3s;
+        &:hover,
+        &:active {
+            background: $primary;
+            color: #fff;
+            path {
+                fill: #fff !important;
+            }
+        }
+    }
+    .open-btn {
+        position: absolute;
+        right: -10px;
+        bottom: 45px;
+        display: block;
+        background: rgba(0, 0, 0, 0.5);
+        color: $light;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 5px;
+        p {
+            font-size: 16px;
+            @include view-576 {
+                font-size: 14px;
+            }
         }
     }
 }

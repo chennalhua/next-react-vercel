@@ -114,11 +114,13 @@ const FunctionList = ({ type, GotoInsurance }) => { //固定右側功能列
         <Icon icon='arrow_right_line' size={20} color='#fff'/> */}
             <div className='function-list position-fixed d-block' style={{ bottom: '25px', right: '10px', zIndex: '10' }}>
                 {GotoInsurance && handleBtn?.goInsurance()}
-                <a href='#' className='open-btn' onClick={e => handleEvent?.openListState(e)}>
-                    <div className='d-flex justify-content-center align-items-center'>
-                        <Icon icon={`${isShowList ? 'arrow_right_line' : 'arrow_left_line'}`} size={20} color='#fff' className={`py-1`} />
-                    </div>
-                    <p style={{ whiteSpace: 'pre' }}>有疑問?</p>
+                <div className='open-btn'>
+                    <a href='#' onClick={e => handleEvent?.openListState(e)}>
+                        <div className='d-flex justify-content-center align-items-center'>
+                            <Icon icon={`${isShowList ? 'arrow_right_line' : 'arrow_left_line'}`} size={22} color='#fff' className={`py-1`} />
+                        </div>
+                        <p className='text-light' style={{ whiteSpace: 'pre' }}>有疑問?</p>
+                    </a>
                     <div className={`${isShowList ? 'd-block' : 'd-none'}`}>
                         <button id='FBContact' className='function-btn btn my-3 position-relative bg-fb' style={{ top: '6px', right: '1px', boxShadow: 'none' }}>
                             <div class="spinner-border spinner-border-sm text-light " role="status">
@@ -128,7 +130,7 @@ const FunctionList = ({ type, GotoInsurance }) => { //固定右側功能列
                         {handleBtn?.goLine()}
                         {handleBtn?.haveQA()}
                     </div>
-                </a>
+                </div>
 
                 {handleBtn?.goTop()}
             </div>
